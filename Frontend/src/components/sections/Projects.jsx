@@ -74,14 +74,27 @@ export default function Projects() {
               href="https://portfolio-tau-swart-0ksz5zj551.vercel.app/" 
               target="_blank" 
               rel="noreferrer" 
-              className="order-2 lg:order-1 relative rounded-2xl overflow-hidden aspect-video bg-white dark:bg-[#1e1e2d] border border-slate-300 dark:border-outline-variant/10 shadow-lg flex items-center justify-center cursor-pointer hover:shadow-xl hover:border-indigo-500/50 transition-all duration-300 transform hover:-translate-y-1 block"
+              className="order-2 lg:order-1 relative rounded-2xl overflow-hidden aspect-video bg-[#0f172a] border border-slate-300 dark:border-outline-variant/10 shadow-lg flex items-center justify-center cursor-pointer hover:shadow-xl hover:border-indigo-500/50 transition-all duration-300 transform hover:-translate-y-1 block group/link"
             >
-              <img 
-                src="/portfolio-screen.png" 
-                alt="Portfolio Website UI" 
-                className="w-full h-full object-cover transition-all duration-500 hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 dark:from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+              <div className="w-full h-full flex flex-col items-center justify-center p-4 relative overflow-hidden transition-all duration-700 group-hover/link:scale-105 text-center z-0">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-600/30 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-600/30 blur-3xl rounded-full"></div>
+                
+                <div className="z-10 bg-slate-800/50 border border-slate-700/50 rounded-full px-3 py-1 mb-3 flex items-center gap-1.5">
+                  <div className="w-1.5 h-1.5 bg-indigo-400 rounded-full"></div>
+                  <span className="text-[8px] sm:text-[10px] text-slate-300 uppercase tracking-widest">Available for Projects</span>
+                </div>
+                <h4 className="text-white font-extrabold text-2xl sm:text-3xl leading-tight mb-2 tracking-tight">
+                  Devendra <br className="sm:hidden" />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Parmar</span>
+                </h4>
+                <p className="text-slate-400 text-xs sm:text-sm px-4 mb-4 font-medium">Computer Eng Student <span className="hidden sm:inline">|</span><br className="sm:hidden" /> Web Developer</p>
+                <div className="flex gap-2 z-10">
+                  <div className="px-3 py-1.5 bg-indigo-600 rounded text-[10px] sm:text-xs text-white font-bold shadow-md">View Projects</div>
+                  <div className="px-3 py-1.5 bg-slate-800 border border-slate-600 rounded text-[10px] sm:text-xs text-white font-bold">Contact Me</div>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 dark:from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8 z-10">
                 <span className="text-white dark:text-primary font-bold flex items-center gap-2">
                   <span className="material-symbols-outlined text-sm">open_in_new</span>
                   Launch Demo
