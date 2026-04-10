@@ -62,17 +62,32 @@ export default function Projects() {
                 <span className="px-3 py-1 rounded-full bg-slate-200 dark:bg-surface-container-high text-xs font-semibold text-indigo-600 dark:text-primary">Javascript</span>
               </div>
               <div className="flex flex-wrap gap-4 pt-4">
+                <a href="https://portfolio-tau-swart-0ksz5zj551.vercel.app/" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 rounded-lg bg-indigo-600 dark:bg-primary text-white dark:text-on-primary-fixed font-bold hover:scale-105 transition-transform shadow-md">
+                  <span className="material-symbols-outlined text-sm">rocket_launch</span> Live Demo
+                </a>
                 <a href="https://github.com/parmardevendra2007" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-100 dark:bg-surface-container-high border border-slate-300 dark:border-outline-variant/15 font-bold hover:bg-slate-200 dark:hover:bg-surface-bright transition-all text-slate-800 dark:text-white shadow-sm">
                   <span className="material-symbols-outlined text-sm">code</span> Source Code
                 </a>
               </div>
             </div>
-            <div className="order-2 lg:order-1 relative rounded-2xl overflow-hidden aspect-video bg-indigo-50 dark:bg-surface-container-high border border-slate-300 dark:border-outline-variant/10 shadow-lg flex items-center justify-center">
-               <div className="p-8 text-center drop-shadow-sm">
-                  <span className="material-symbols-outlined text-6xl text-indigo-500 dark:text-primary mb-4 block">code_blocks</span>
-                  <span className="text-2xl font-bold text-slate-800 dark:text-white font-headline">Portfolio UI</span>
-               </div>
-            </div>
+            <a 
+              href="https://portfolio-tau-swart-0ksz5zj551.vercel.app/" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="order-2 lg:order-1 relative rounded-2xl overflow-hidden aspect-video bg-white dark:bg-[#1e1e2d] border border-slate-300 dark:border-outline-variant/10 shadow-lg flex items-center justify-center cursor-pointer hover:shadow-xl hover:border-indigo-500/50 transition-all duration-300 transform hover:-translate-y-1 block"
+            >
+              <img 
+                src="/portfolio-screen.png" 
+                alt="Portfolio Website UI" 
+                className="w-full h-full object-cover transition-all duration-500 hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 dark:from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                <span className="text-white dark:text-primary font-bold flex items-center gap-2">
+                  <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  Launch Demo
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
